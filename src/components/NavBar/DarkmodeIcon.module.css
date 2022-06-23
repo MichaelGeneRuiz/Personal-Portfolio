@@ -1,0 +1,13 @@
+.darkmode_icon {
+  height: 30px;
+  padding-right: 2%;
+  content: url("../../assets/icons/sun.svg");
+}
+
+.darkmode_icon:hover{
+  cursor: pointer;
+}
+
+.darkmode_icon.dark-theme {
+  content: url("../../assets/icons/moon.svg");
+}

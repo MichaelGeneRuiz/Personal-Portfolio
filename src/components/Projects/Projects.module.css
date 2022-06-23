@@ -1,0 +1,28 @@
+.projects {
+  margin-top: 50px;
+}
+
+.project_intro {
+  margin: auto;
+  text-align: center;
+  font-size: var(--font-size-large);
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family: "Roboto Mono";
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.project_grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, minmax(360px, 720px));
+  justify-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .project_grid{
+    grid-template-columns: repeat(1, minmax(240px, 1fr));
+  }
+}

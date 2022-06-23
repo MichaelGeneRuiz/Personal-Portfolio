@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --font-size-normal: 1.6rem;
+  --font-size-large: 4.8rem;
+  --font-size-sortalarge: 3.2rem;
+  --font-size-medium: 2.4rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: "Roboto";
+  min-height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 1rem;
+  margin: 1rem;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(150, 170, 165, 0.5),
+    rgba(106, 161, 149, 0.9)
+  );
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body.dark-theme {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+  color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Fade In animation*/
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
