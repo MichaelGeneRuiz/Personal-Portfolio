@@ -34,7 +34,7 @@ const project_one = {
   ),
   anchorData: [
     {
-      href: "https://github.com/MichaelGeneRuiz/crock-bot",
+      href: "https://github.com/MichaelGeneRuiz/Crock-Bot",
       title: "Github",
       key: Math.random(),
     },
