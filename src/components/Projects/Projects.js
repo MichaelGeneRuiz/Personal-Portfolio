@@ -6,6 +6,7 @@ import classes from "./Projects.module.css";
 import project_one_image from "../../assets/project_covers/crock-pot.jpg";
 import project_two_image from "../../assets/project_covers/thermostat.jpg";
 import project_three_image from "../../assets/project_covers/black_meerkat.jpg";
+import project_four_image from "../../assets/project_covers/mls-stats.PNG";
 
 const project_one = {
   src: project_one_image,
@@ -109,11 +110,58 @@ const project_three = {
   ],
 };
 
+const project_four = {
+  src: project_four_image,
+  id: "4",
+  alt: "A Screenshot of the MLS Stats Homepage",
+  title: "MLS Stats",
+  description: (
+    <React.Fragment>
+      <p>
+        This site provides an overview of every MLS team, as well as in-depth 
+        statistics gathered from API Sports. New stats are pulled from the API
+        every day, meaning the site will always be up to date with the current
+        MLS season.
+      </p>
+
+      <p>
+        This site was created using a combination of Next JS, Bootstrap,
+        Chart.JS, and MongoDB. 
+      </p>
+
+      <p>
+        The site's source code can be found on the accompanying Github
+        page.
+      </p>
+    </React.Fragment>
+  ),
+  anchorData: [
+    {
+      href: "https://mls-stats.vercel.app/",
+      title: "Website",
+      key: "1",
+    },
+    {
+      href: "https://github.com/MichaelGeneRuiz/mls-stats",
+      title: "Github",
+      key: "2",
+    },
+  ],
+};
+
 const Projects = () => {
   return (
     <section className={classes.projects}>
       <h1 className={classes.project_intro}>Recent Projects</h1>
       <div className={classes.project_grid}>
+      <Project
+          src={project_four.src}
+          id={project_four.id}
+          alt={project_four.alt}
+          title={project_four.title}
+          description={project_four.description}
+          anchorData={project_four.anchorData}
+        />
         <Project
           src={project_one.src}
           id={project_one.id}
