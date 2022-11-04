@@ -18,13 +18,13 @@ const project_one = {
       <p>
         Crock Bot is a bot created using the Discord JS node module. The bot
         provides my private discord server with additional functionality such as
-        a Currency System, Music Functionality, Automated Role Assignment, and
-        other features.
+        a Currency System, Music Player Functionality, Automated Role
+        Assignment, and other features.
       </p>
 
       <p>
-        The bot was created with Node.js v16.14.2. It uses an sqlite3 database
-        to keep track of the server's currency.
+        The bot was created with Node.js. It uses an sqlite3 database to keep
+        track of the server's currency distribution.
       </p>
 
       <p>
@@ -50,15 +50,14 @@ const project_two = {
   description: (
     <React.Fragment>
       <p>
-        This project was created to determine whether my household thermostat
-        was accurate in its readings.
+        This project was an embedded system project created to verify my
+        household thermostat's temperature and humidity readings.
       </p>
 
       <p>
-        A python script running on a Raspberry Pi 400 was used to gather
-        readings from a DHT22 Temperature-Humidity sensor. Another python script
-        was used to render the data into a user-friendly format in order to make
-        important comparisons.
+        A python script running on a Raspberry Pi was used to gather readings
+        from a DHT22 Temperature-Humidity sensor. Another script was used to
+        transform the data into a readable format.
       </p>
 
       <p>
@@ -84,15 +83,14 @@ const project_three = {
   description: (
     <React.Fragment>
       <p>
-        This website was initially created as a project for a high school
-        Computer Science course. The assignment was to create a website with a
-        unique theme that would be graded based on its design and mobile user
-        interface.
+        This website was created as a project for a high school Computer Science
+        course. The assignment was to create a website with a unique theme that
+        would be graded based on its design and mobile user interface.
       </p>
 
       <p>
-        The website was created using HTML and CSS. Javascript was later used to
-        add additional functionality to the hamburger menu.
+        The website was created using HTML and CSS. Javascript was added later
+        to provide additional functionality to the hamburger menu.
       </p>
     </React.Fragment>
   ),
@@ -118,20 +116,17 @@ const project_four = {
   description: (
     <React.Fragment>
       <p>
-        This site provides an overview of every MLS team, as well as in-depth 
-        statistics gathered from API Sports. New stats are pulled from the API
-        every day, meaning the site will always be up to date with the current
-        MLS season.
+        This site provides the current standings and up-to-date statistics for
+        every MLS team. New stats are pulled from the API at most once per day,
+        and the standings are updated at most once an hour. The data pulled from
+        the API is stored onto a MongoDB database, which provides that data to
+        the website.
       </p>
 
-      <p>
-        This site was created using a combination of Next JS, Bootstrap,
-        Chart.JS, and MongoDB. 
-      </p>
+      <p>The site was created using a combination of NextJS and MongoDB.</p>
 
       <p>
-        The site's source code can be found on the accompanying Github
-        page.
+        The site's source code can be found on the accompanying Github page.
       </p>
     </React.Fragment>
   ),
@@ -154,7 +149,7 @@ const Projects = () => {
     <section className={classes.projects}>
       <h1 className={classes.project_intro}>Recent Projects</h1>
       <div className={classes.project_grid}>
-      <Project
+        <Project
           src={project_four.src}
           id={project_four.id}
           alt={project_four.alt}
