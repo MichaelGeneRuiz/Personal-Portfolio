@@ -12,9 +12,6 @@ html {
 }
 
 body {
-  padding: 1rem;
-  margin: 1rem;
-  box-sizing: border-box;
   background-image: linear-gradient(
     to right bottom,
     rgba(150, 170, 165, 0.5),

@@ -23,8 +23,8 @@ const About = () => {
             <p>
               I decided to pursue Computer Engineering because of my fascination
               with both computer hardware and software. I have taken many
-              courses such as Data Structures and Algorithms, OOP, Electronics,
-              Databases, and more.
+              courses such as Data Structures and Algorithms, OOP, Embedded
+              Systems, Databases, and more.
             </p>
 
             <p>
@@ -32,11 +32,23 @@ const About = () => {
               Studies.
             </p>
 
-            <p>
-              I am mainly experienced with JavaScript (Node, React, Next). I
-              also have experience using languages such as Python, tools such as
-              Git, and databases such as MongoDB and SQL.
-            </p>
+            <hr />
+
+            <ul>
+              <span>Skills: </span>
+              <li>
+                <p>
+                  Languages: JavaScript (ReactJS, NodeJS, NextJS), Python, C,
+                  C++
+                </p>
+              </li>
+              <li>
+                <p>Databases: MongoDB, MySQL</p>
+              </li>
+              <li>
+                <p>Tools: Git</p>
+              </li>
+            </ul>
           </div>
         </Card>
         <div className={classes.about_images}>
