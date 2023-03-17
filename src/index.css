@@ -1,53 +1,32 @@
 :root {
-  --font-size-normal: 1.6rem;
-  --font-size-large: 4.8rem;
-  --font-size-sortalarge: 3.2rem;
-  --font-size-medium: 2.4rem;
+  --font-size-normal: 1rem;
+  --font-size-large: 3rem;
+  --font-size-sortalarge: 2rem;
+  --font-size-medium: 1.5rem;
 }
 
 html {
   font-family: "Roboto";
-  min-height: 100%;
-  font-size: 62.5%;
 }
 
 body {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(150, 170, 165, 0.5),
-    rgba(106, 161, 149, 0.9)
-  );
-  background-size: cover;
-  background-attachment: fixed;
+  margin: 0;
+  background-color: rgba(106, 161, 149, 0.7);
 }
 
 body.dark-theme {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.9)
-  );
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1200px) {
   html {
-    font-size: 50%;
+    font-size: 90%;
   }
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (max-width: 576px) {
   html {
-    font-size: 50%;
-  }
-}
-
-/* Fade In animation*/
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+    font-size: 60%;
   }
 }

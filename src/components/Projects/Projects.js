@@ -1,5 +1,7 @@
 import React from "react";
 
+import Container from "react-bootstrap/Container";
+
 import Project from "./Project";
 import classes from "./Projects.module.css";
 
@@ -14,24 +16,12 @@ const project_one = {
   alt: "A Crock Pot",
   title: "Crock Bot",
   description: (
-    <React.Fragment>
-      <p>
-        Crock Bot is a bot created using the Discord JS node module. The bot
-        provides my private discord server with additional functionality such as
-        a Currency System, Music Player Functionality, Automated Role
-        Assignment, and other features.
-      </p>
-
-      <p>
-        The bot was created with Node.js. It uses an sqlite3 database to keep
-        track of the server's currency distribution.
-      </p>
-
-      <p>
-        The bot's features are described in depth on the accompanying Github
-        page.
-      </p>
-    </React.Fragment>
+    <p>
+      Crock Bot is a chat bot created using the Discord JS node module. The bot
+      provides my discord server with additional functionality such as a
+      Currency System, Music Player Functionality, Automated Role Assignment,
+      and other features.
+    </p>
   ),
   anchorData: [
     {
@@ -48,23 +38,12 @@ const project_two = {
   alt: "A Thermostat",
   title: "Thermostat Verification",
   description: (
-    <React.Fragment>
-      <p>
-        This project was an embedded system project created to verify my
-        household thermostat's temperature and humidity readings.
-      </p>
-
-      <p>
-        A python script running on a Raspberry Pi was used to gather readings
-        from a DHT22 Temperature-Humidity sensor. Another script was used to
-        transform the data into a readable format.
-      </p>
-
-      <p>
-        A more in-depth explanation can be found on the accompanying Github
-        page.
-      </p>
-    </React.Fragment>
+    <p>
+      This project was an embedded systems project created to verify my
+      household thermostat's temperature and humidity readings. A python script
+      running on a Raspberry Pi was used to gather readings from a DHT22
+      Temperature-Humidity sensor every hour.
+    </p>
   ),
   anchorData: [
     {
@@ -81,18 +60,11 @@ const project_three = {
   alt: "A Screenshot of the Black Meerkat Homepage",
   title: "The Black Meerkat",
   description: (
-    <React.Fragment>
-      <p>
-        This website was created as a project for a high school Computer Science
-        course. The assignment was to create a website with a unique theme that
-        would be graded based on its design and mobile user interface.
-      </p>
-
-      <p>
-        The website was created using HTML and CSS. Javascript was added later
-        to provide additional functionality to the hamburger menu.
-      </p>
-    </React.Fragment>
+    <p>
+      This website was created as a project for a high school Computer Science
+      course. The assignment was to create a website with a unique theme that
+      would be graded based on its design and mobile user interface.
+    </p>
   ),
   anchorData: [
     {
@@ -114,21 +86,13 @@ const project_four = {
   alt: "A Screenshot of the MLS Stats Homepage",
   title: "MLS Stats",
   description: (
-    <React.Fragment>
-      <p>
-        This site provides the current standings and up-to-date statistics for
-        every MLS team. New stats are pulled from the API at most once per day,
-        and the standings are updated at most once an hour. The data pulled from
-        the API is stored onto a MongoDB database, which provides that data to
-        the website.
-      </p>
-
-      <p>The site was created using a combination of NextJS and MongoDB.</p>
-
-      <p>
-        The site's source code can be found on the accompanying Github page.
-      </p>
-    </React.Fragment>
+    <p>
+      This site provides the current standings and up-to-date statistics for
+      every MLS team. New stats are pulled from the API at most once per day,
+      and the standings are updated at most once an hour. The data pulled from
+      the API is stored onto a MongoDB database, which provides that data to the
+      website.
+    </p>
   ),
   anchorData: [
     {
@@ -144,11 +108,11 @@ const project_four = {
   ],
 };
 
-const Projects = () => {
+const Projects = (props) => {
   return (
-    <section className={classes.projects}>
+    <Container id={props.scrollId} className={classes.projects}>
       <h1 className={classes.project_intro}>Recent Projects</h1>
-      <div className={classes.project_grid}>
+      <Container>
         <Project
           src={project_four.src}
           id={project_four.id}
@@ -157,6 +121,7 @@ const Projects = () => {
           description={project_four.description}
           anchorData={project_four.anchorData}
         />
+        <hr />
         <Project
           src={project_one.src}
           id={project_one.id}
@@ -165,6 +130,7 @@ const Projects = () => {
           description={project_one.description}
           anchorData={project_one.anchorData}
         />
+        <hr />
         <Project
           src={project_two.src}
           id={project_two.id}
@@ -173,7 +139,7 @@ const Projects = () => {
           description={project_two.description}
           anchorData={project_two.anchorData}
         />
-
+        <hr />
         <Project
           src={project_three.src}
           id={project_three.id}
@@ -182,8 +148,8 @@ const Projects = () => {
           description={project_three.description}
           anchorData={project_three.anchorData}
         />
-      </div>
-    </section>
+      </Container>
+    </Container>
   );
 };
 

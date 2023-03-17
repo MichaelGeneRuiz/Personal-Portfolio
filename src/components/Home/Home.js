@@ -1,18 +1,19 @@
-import React from "react";
+import Container from "react-bootstrap/Container";
+import Stack from "react-bootstrap/Stack";
 
 import classes from "./Home.module.css";
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <section className={classes.home}>
-      <div className={classes.container}>
+    <Container id={props.scrollId} className={classes.home}>
+      <Stack gap={4} className={classes["text-container"]}>
         <div className={classes.intro}>Hi. I'm Michael Ruiz.</div>
         <div className={classes.subintro}>
           I'm a Computer Engineering student at the NYU Tandon School of
           Engineering.
         </div>
-      </div>
-    </section>
+      </Stack>
+    </Container>
   );
 };
 

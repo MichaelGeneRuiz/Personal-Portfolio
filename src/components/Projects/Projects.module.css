@@ -1,5 +1,5 @@
 .projects {
-  margin-top: 50px;
+  margin-top: 35vh;
 }
 
 .project_intro {
@@ -14,21 +14,9 @@
   padding-bottom: 1%;
 }
 
-.project_grid {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, minmax(360px, 720px));
-  justify-items: center;
-  justify-content: center;
-}
-
-@media only screen and (max-width: 1024px) {
-  .project_grid{
-    grid-template-columns: repeat(1, minmax(240px, 1fr));
-  }
-
+@media only screen and (max-width: 1200px) {
   .project_intro {
-    padding-bottom: 20px;
-    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
 }

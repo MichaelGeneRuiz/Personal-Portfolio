@@ -1,11 +1,10 @@
-.project_box{
+.project_box {
   align-items: center;
 }
 
 .project_image {
-  margin: 20px;
-  border-radius: 50px;
-  width: 95%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   filter: brightness(80%);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -13,37 +12,30 @@
 .project_title {
   font-size: var(--font-size-sortalarge);
   font-weight: bolder;
-  text-align: center;
 }
 
 .project_description {
-  margin-right: 10px;
-  margin-left: 10px;
   font-size: var(--font-size-medium);
-  text-align: center;
 }
 
-.project_links_container {
-  margin: 10px;
-  font-size: var(--font-size-medium);
-  font-weight: bolder;
-  text-align: center;
-}
-
-.project_links {
+.project_buttons {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(161, 106, 118);
   color: black;
 }
 
-.project_links.dark-theme {
+.project_buttons:hover {
+  background-color: rgb(161, 106, 118);
+  border-color: rgb(161, 106, 118);
   color: white;
 }
 
-.project_links:visited {
-  text-decoration: none;
+.project_buttons.dark-theme {
+  color: white;
 }
 
-.no_bullets {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+@media only screen and (max-width: 992px) {
+  .project_box{
+    flex-direction: column;
+  }
 }
