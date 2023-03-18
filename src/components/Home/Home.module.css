@@ -13,6 +13,7 @@
 .intro {
   font-weight: bold;
   font-size: var(--font-size-large);
+  font-family: "Roboto Mono", sans-serif;
   letter-spacing: 1rem;
   text-align: center;
 }
@@ -20,6 +21,7 @@
 .subintro {
   font-weight: bold;
   font-size: var(--font-size-medium);
+  font-family: "Roboto Mono", sans-serif;
   letter-spacing: 0.1rem;
   text-align: center;
 }

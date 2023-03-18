@@ -5,12 +5,9 @@
   --font-size-medium: 1.5rem;
 }
 
-html {
-  font-family: "Roboto";
-}
-
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
   background-color: rgba(106, 161, 149, 0.7);
 }
 
