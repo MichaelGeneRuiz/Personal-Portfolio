@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 
 const DarkmodeContext = React.createContext({
-  isDarkmode: false,
+  isDarkmode: true,
   onToggle: () => {},
 });
 
 export function DarkmodeContextProvider(props) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     const darkmodeInformation = localStorage.getItem("darkmode");
 
-    if (darkmodeInformation === "1") {
+    if (darkmodeInformation === "0") {
+      setIsDarkMode(false);
+    } else {
       setIsDarkMode(true);
       document.body.classList.toggle("dark-theme");
     }
@@ -19,10 +21,10 @@ export function DarkmodeContextProvider(props) {
 
   const darkmodeToggleHandler = () => {
     if (isDarkMode) {
-      localStorage.removeItem("darkmode");
+      localStorage.setItem("darkmode", "0");
       setIsDarkMode(false);
     } else {
-      localStorage.setItem("darkmode", "1");
+      localStorage.removeItem("darkmode");
       setIsDarkMode(true);
     }
 

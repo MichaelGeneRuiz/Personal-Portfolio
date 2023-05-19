@@ -20,22 +20,21 @@ const About = (props) => {
         <Col>
           <Card className={classes.about_card}>
             <p>
-              I am an aspiring Computer Engineer currently studying at the NYU
-              Tandon School of Engineering. I am passionate about software
-              engineering, web development, board games, video games, and
-              soccer.
+              I graduated with a bachelor's degree from the NYU Tandon School of
+              Engineering. My major was in Computer Engineering and my minor was
+              in Science and Technology Studies.
             </p>
 
             <p>
-              I decided to pursue Computer Engineering because of my fascination
-              with both computer hardware and software. I have taken many
-              courses such as Data Structures and Algorithms, OOP, Embedded
-              Systems, Databases, and more.
+              I decided to pursue Full Stack Engineering due to my interest in
+              all parts of the software development lifecycle. I love the
+              challenge of creating, testing, and implementing ideas to provide
+              clean and fulfilling user experiences.
             </p>
 
             <p>
-              I am also currently pursuing a minor in Science and Technology
-              Studies.
+              Outside of software development, I am also passionate about board
+              games, video games, and soccer.
             </p>
           </Card>
         </Col>

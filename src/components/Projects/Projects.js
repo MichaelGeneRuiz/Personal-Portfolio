@@ -1,5 +1,3 @@
-import React from "react";
-
 import Container from "react-bootstrap/Container";
 
 import Project from "./Project";
@@ -9,6 +7,7 @@ import project_one_image from "../../assets/project_covers/crock-pot.jpg";
 import project_two_image from "../../assets/project_covers/thermostat.jpg";
 import project_three_image from "../../assets/project_covers/black_meerkat.jpg";
 import project_four_image from "../../assets/project_covers/mls-stats.PNG";
+import project_five_image from "../../assets/project_covers/Metaprint.png";
 
 const project_one = {
   src: project_one_image,
@@ -108,11 +107,44 @@ const project_four = {
   ],
 };
 
+const project_five = {
+  src: project_five_image,
+  id: "5",
+  alt: "A Screenshot of the Metaprint Homepage",
+  title: "Metaprint",
+  description: (
+    <p>
+      Metaprint is the final product of my Software Engineering Design Project.
+      Myself and three classmates utilized the Agile methodology to create a web
+      application that keeps track of your personal carbon footprint. Users can
+      track their activities that generate emissions, receive tips and tricks on
+      how to reduce these emissions, as well as compare their emissions to those
+      of all Metaprint users.
+    </p>
+  ),
+  anchorData: [
+    {
+      href: "https://github.com/MichaelGeneRuiz/Metaprint",
+      title: "Github",
+      key: "1",
+    },
+  ],
+};
+
 const Projects = (props) => {
   return (
     <Container id={props.scrollId} className={classes.projects}>
       <h1 className={classes.project_intro}>Recent Projects</h1>
       <Container>
+        <Project
+          src={project_five.src}
+          id={project_five.id}
+          alt={project_five.alt}
+          title={project_five.title}
+          description={project_five.description}
+          anchorData={project_five.anchorData}
+        />
+        <hr />
         <Project
           src={project_four.src}
           id={project_four.id}
@@ -139,7 +171,7 @@ const Projects = (props) => {
           description={project_two.description}
           anchorData={project_two.anchorData}
         />
-        <hr />
+        {/* <hr />
         <Project
           src={project_three.src}
           id={project_three.id}
@@ -147,7 +179,7 @@ const Projects = (props) => {
           title={project_three.title}
           description={project_three.description}
           anchorData={project_three.anchorData}
-        />
+        /> */}
       </Container>
     </Container>
   );
