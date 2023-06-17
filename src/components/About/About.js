@@ -26,7 +26,7 @@ const About = (props) => {
             </p>
 
             <p>
-              I decided to pursue Full Stack Engineering due to my interest in
+              I decided to pursue Software Engineering due to my interest in
               all parts of the software development lifecycle. I love the
               challenge of creating, testing, and implementing ideas to provide
               clean and fulfilling user experiences.
