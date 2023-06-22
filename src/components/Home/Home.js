@@ -9,7 +9,7 @@ const Home = (props) => {
       <Stack gap={4} className={classes["text-container"]}>
         <div className={classes.intro}>Hi. I'm Michael Ruiz.</div>
         <div className={classes.subintro}>
-          I'm an aspiring Software Engineer..
+          I'm an aspiring Software Engineer.
         </div>
       </Stack>
     </Container>
