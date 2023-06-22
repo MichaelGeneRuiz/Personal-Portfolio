@@ -1,9 +1,7 @@
+import TableOfContents from "../components/AWSCorner/TableOfContents";
+
 function AWSCorner() {
-  return (
-    <div style={{ textAlign: "center" }}>
-      <p>This is the AWS Corner.</p>
-    </div>
-  );
+  return <TableOfContents />;
 }
 
 export default AWSCorner;
