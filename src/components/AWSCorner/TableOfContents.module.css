@@ -1,0 +1,26 @@
+.container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro {
+  margin: auto;
+  text-align: center;
+  font-size: var(--font-size-large);
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family: "Roboto Mono";
+  overflow: hidden;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.text {
+  font-weight: bold;
+  font-size: var(--font-size-medium);
+  font-family: "Roboto Mono", sans-serif;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
