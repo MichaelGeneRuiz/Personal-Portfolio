@@ -19,8 +19,6 @@ function HourlyPokemon() {
         throw new Error(data.message);
       }
 
-      console.log(data);
-
       setCurrentPokemon(data);
     } catch (error) {
       console.log(error);
@@ -35,8 +33,8 @@ function HourlyPokemon() {
     <Container className={classes.container}>
       <div className={classes.intro}>Hourly Pokemon</div>
       <div>Generates a new Pokemon every hour.</div>
-      {!currentPokemon && <div>Loading...</div>}
-      {currentPokemon && (
+      {!currentPokemon.index && <div>Loading...</div>}
+      {currentPokemon.index && (
         <div className={classes["poke-container"]}>
           <img
             className={classes["poke-image"]}
