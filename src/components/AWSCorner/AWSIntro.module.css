@@ -1,7 +1,6 @@
 .container {
-  height: 80vh;
+  height: auto;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -17,9 +16,9 @@
   margin-bottom: 1%;
 }
 
-.text {
+.subintro {
   font-weight: bold;
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-normal);
   font-family: "Roboto Mono", sans-serif;
   letter-spacing: 0.1rem;
   text-align: center;

@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro {
+  margin: auto;
+  text-align: center;
+  font-size: var(--font-size-large);
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family: "Roboto Mono";
+  overflow: hidden;
+}

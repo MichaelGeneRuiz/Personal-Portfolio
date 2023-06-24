@@ -1,12 +1,13 @@
 import Container from "react-bootstrap/Container";
 
-import TableOfContents from "../components/AWSCorner/TableOfContents";
+import AWSIntro from "../components/AWSCorner/AWSIntro";
 import Widgets from "../components/AWSCorner/Widgets";
 
 function AWSCorner() {
   return (
     <Container>
-      <TableOfContents />
+      <AWSIntro scrollId="section4" />
+      <hr />
       <Widgets />
     </Container>
   );

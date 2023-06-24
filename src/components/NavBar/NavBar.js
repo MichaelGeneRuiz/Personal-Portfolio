@@ -24,6 +24,28 @@ const NavBar = () => {
     });
   };
 
+  const homeClickHandler = (e) => {
+    e.preventDefault();
+
+    if (location.pathname !== "/") {
+      navigate("/");
+    } else {
+      scrollToSection("section1");
+    }
+  };
+
+  const aboutClickHandler = (e) => {
+    e.preventDefault();
+
+    scrollToSection("section2");
+  };
+
+  const projectsClickHandler = (e) => {
+    e.preventDefault();
+
+    scrollToSection("section3");
+  };
+
   const githubClickHandler = (e) => {
     e.preventDefault();
     window.open("https://github.com/MichaelGeneRuiz");
@@ -32,7 +54,11 @@ const NavBar = () => {
   const awsPageHandler = (e) => {
     e.preventDefault();
 
-    navigate("/AWSCorner");
+    if (location.pathname !== "/AWSCorner") {
+      navigate("/AWSCorner");
+    } else {
+      scrollToSection("section4");
+    }
   };
 
   return (
@@ -40,24 +66,12 @@ const NavBar = () => {
       className={`${classes.navbar} ${darkmodeCtx.isDarkmode && classes.dark}`}
     >
       <DarkmodeIcon />
-      <NavButton
-        onClick={() => {
-          if (location.pathname !== "/") {
-            navigate("/");
-          } else {
-            scrollToSection("section1");
-          }
-        }}
-      >
-        Home
-      </NavButton>
+      <NavButton onClick={homeClickHandler}>Home</NavButton>
       {location.pathname === "/" && (
-        <NavButton onClick={() => scrollToSection("section2")}>About</NavButton>
+        <NavButton onClick={aboutClickHandler}>About</NavButton>
       )}
       {location.pathname === "/" && (
-        <NavButton onClick={() => scrollToSection("section3")}>
-          Projects
-        </NavButton>
+        <NavButton onClick={projectsClickHandler}>Projects</NavButton>
       )}
       <NavButton onClick={awsPageHandler}>AWS Corner</NavButton>
       <NavButton onClick={githubClickHandler}>Github</NavButton>
