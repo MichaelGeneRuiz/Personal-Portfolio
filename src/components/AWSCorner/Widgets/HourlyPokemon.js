@@ -36,7 +36,7 @@ function HourlyPokemon() {
   return (
     <Container className={classes.container}>
       <div className={classes.intro}>Hourly Pokemon</div>
-      <div>Generates a new Pokemon every hour.</div>
+      <div>Randomly generates a Gen 1-8 Pokemon every hour.</div>
       {loading && (
         <Spinner
           style={{
