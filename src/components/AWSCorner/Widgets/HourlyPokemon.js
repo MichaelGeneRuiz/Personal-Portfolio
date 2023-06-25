@@ -1,13 +1,16 @@
 import { useState, useEffect, useCallback } from "react";
 
 import Container from "react-bootstrap/Container";
+import Spinner from "react-bootstrap/Spinner";
 
 import classes from "./HourlyPokemon.module.css";
 
 function HourlyPokemon() {
   const [currentPokemon, setCurrentPokemon] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const fetchPokemon = useCallback(async () => {
+    setLoading(true);
     try {
       const res = await fetch(
         "https://nl2rxqz2gg.execute-api.us-east-2.amazonaws.com/default/fetchPokemon"
@@ -20,6 +23,7 @@ function HourlyPokemon() {
       }
 
       setCurrentPokemon(data);
+      setLoading(false);
     } catch (error) {
       console.log(error);
     }
@@ -33,13 +37,21 @@ function HourlyPokemon() {
     <Container className={classes.container}>
       <div className={classes.intro}>Hourly Pokemon</div>
       <div>Generates a new Pokemon every hour.</div>
-      {!currentPokemon.index && <div>Loading...</div>}
-      {currentPokemon.index && (
+      {loading && (
+        <Spinner
+          style={{
+            alignSelf: "center",
+            marginTop: "1rem",
+            marginBottom: "1rem",
+          }}
+        />
+      )}
+      {!loading && (
         <div className={classes["poke-container"]}>
           <img
             className={classes["poke-image"]}
             src={currentPokemon.sprite}
-            alt="Loading..."
+            alt="(no sprite)"
           />
           <div>{currentPokemon.species}</div>
           <div>
