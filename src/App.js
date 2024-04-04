@@ -2,6 +2,8 @@ import { Fragment } from "react";
 
 import { Route, Routes } from "react-router-dom";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import NavBar from "./components/NavBar/NavBar";
 import LandingPage from "./pages/LandingPage";
 import AWSCorner from "./pages/AWSCorner";
@@ -11,13 +13,14 @@ function App() {
   return (
     <Fragment>
       <NavBar />
-      <main style={{marginTop: 50}}>
+      <main style={{ marginTop: 50 }}>
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route path="/AWSCorner" element={<AWSCorner />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>
+      <Analytics />
     </Fragment>
   );
 }
