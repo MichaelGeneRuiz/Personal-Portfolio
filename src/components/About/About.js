@@ -26,15 +26,15 @@ const About = (props) => {
             </p>
 
             <p>
-              I decided to pursue Software Engineering due to my interest in
-              all parts of the software development lifecycle. I love the
-              challenge of creating, testing, and implementing ideas to provide
-              clean and fulfilling user experiences.
+              I am currently a Systems Engineer, but have retained my passion
+              for Software Engineering. I love the challenge of creating,
+              testing, and implementing ideas that provide clean and fulfilling
+              user experiences.
             </p>
 
             <p>
               Outside of software development, I am also passionate about board
-              games, video games, and soccer.
+              games, video games, soccer, and basketball.
             </p>
           </Card>
         </Col>
