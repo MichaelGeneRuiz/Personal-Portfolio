@@ -86,8 +86,9 @@ const project_four = {
   title: "MLS Stats",
   description: (
     <p>
-      This site provides the current standings and up-to-date statistics for
-      every MLS team. New stats are pulled from the API at most once per day,
+      This site provides the standings and statistics for every MLS team in 
+      2022. (NOTE: The API has disallowed updates past the year 2022.)
+      New stats are pulled from the API at most once per day,
       and the standings are updated at most once an hour. The data pulled from
       the API is stored onto a MongoDB database, which provides that data to the
       website.
