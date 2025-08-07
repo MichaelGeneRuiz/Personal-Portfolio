@@ -83,23 +83,22 @@ const project_four = {
   src: project_four_image,
   id: "4",
   alt: "A Screenshot of the MLS Stats Homepage",
-  title: "MLS Stats",
+  title: "MLS Stats [DEPRECATED]",
   description: (
     <p>
       This site provides the standings and statistics for every MLS team in 
-      2022. (NOTE: The API has disallowed updates past the year 2022.)
-      New stats are pulled from the API at most once per day,
+      2022. New stats are pulled from the API at most once per day,
       and the standings are updated at most once an hour. The data pulled from
       the API is stored onto a MongoDB database, which provides that data to the
       website.
     </p>
   ),
   anchorData: [
-    {
+    /*{
       href: "https://mls-stats.vercel.app/",
       title: "Website",
       key: "1",
-    },
+    },*/
     {
       href: "https://github.com/MichaelGeneRuiz/mls-stats",
       title: "Github",
