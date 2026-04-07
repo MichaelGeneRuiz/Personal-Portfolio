@@ -5,7 +5,7 @@ import classes from "./Projects.module.css";
 
 import project_one_image from "../../assets/project_covers/crock-pot.jpg";
 import project_two_image from "../../assets/project_covers/thermostat.jpg";
-import project_three_image from "../../assets/project_covers/black_meerkat.jpg";
+//import project_three_image from "../../assets/project_covers/black_meerkat.jpg";
 import project_four_image from "../../assets/project_covers/mls-stats.PNG";
 import project_five_image from "../../assets/project_covers/Metaprint.png";
 
@@ -53,7 +53,7 @@ const project_two = {
   ],
 };
 
-const project_three = {
+/*const project_three = {
   src: project_three_image,
   id: "3",
   alt: "A Screenshot of the Black Meerkat Homepage",
@@ -77,7 +77,7 @@ const project_three = {
       key: "2",
     },
   ],
-};
+};*/
 
 const project_four = {
   src: project_four_image,
